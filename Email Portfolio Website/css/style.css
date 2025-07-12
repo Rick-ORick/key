@@ -1,0 +1,269 @@
+/*============= RESET STYLE =============*/
+
+/*-- iPhone X Remove Gutters
+Ignore W3C Validation error for this style. --*/
+html {
+   padding: env(safe-area-inset);
+   scroll-behavior: auto!important; /*-- Disable Bootstrap 5 Scroll Behavior to control speed in plugins.js --*/
+}
+
+/*-- Body Resets --*/
+body {
+   font-family: 'Open Sans', sans-serif;
+   color: #363c42;
+}
+
+/*-- Remove Blue Browser Outline Around Buttons in Chrome --*/
+a:focus,
+button:focus {
+  outline: 0 !important;
+  -webkit-appearance: none;
+  box-shadow: none !important;
+}
+
+/*-- Pointer Cursor On Links & Buttons --*/
+a, .btn, button {
+   cursor: pointer!important;
+   text-decoration: none;
+   transition: all .5s ease;
+}
+
+/*-- Change Links Color & Remove Underline --*/
+a {
+   color: #1b6aff;
+   text-decoration: none;
+ }
+
+/*-- Make Paragraph Text Larger --*/
+p {
+   font-size: 1.2rem!important;
+ }
+ 
+ /*-- Box Shadow Button & Image Styling --*/
+ .btn, .img-fluid {
+   box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+ }
+
+/*============= NAVIGATION =============*/
+
+.navbar-brand img {
+   height: 2rem;
+}
+.navbar {
+   padding: .6rem .9rem;
+   font-size: .95rem;
+   letter-spacing: .06rem;
+   background-color: rgba(0, 0, 0, .9);
+   font-weight: 700;
+   text-transform: uppercase;
+}
+.navbar-nav li {
+   padding-right: .8rem;
+}
+.navbar-nav .nav-link {
+   padding-top: .8rem;
+   color: white;
+   text-shadow: 0px 0px 2px rgba(0, 0, 0, 1);
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+   color: #679cff;
+}
+.svg-inline--fa.fa-bars {
+   color: white;
+   font-size: 1.6rem;
+}
+/*-- Remove Button Outline --*/
+button:active, button:focus {
+   outline: 0;
+}
+.navbar-toggler {
+   border: none!important;
+}
+
+/*============= LANDING PAGE =============*/
+
+/*-- Parallax Landing Page Section --*/
+.parallax-home {
+   height: 100vh;
+
+}
+.btn {
+   font-size: 1.1rem;
+   border-width: medium;
+   padding: .5rem 1.2rem;
+   font-weight: 500!important;
+   text-transform: uppercase;
+   border-radius: .2rem;
+}
+.home-social {
+   color: #fff;
+   font-size: 1.9rem;
+   padding-right: 1rem;
+}
+.home-social:hover {
+   color: #DDDEDF;
+}
+
+.bh-button {
+   background-color: #1b6aff !important;
+   border-color: #1b6aff !important;
+   color: #fff !important;
+}
+.bh-button:hover,
+.bh-button.active {
+   background-color: #679cff !important;
+   border-color: #679cff !important;
+}
+
+/*============= ABOUT SECTION =============*/
+
+/*-- Scrollspy Offset --*/
+.offset:before {
+   content: "";
+   height: 3.875rem;
+   margin-top: -3.875rem;
+   display: block;
+}
+
+.heading {
+   text-align: left;
+   font-size: 2rem;
+   text-transform: uppercase;
+   font-weight: 700;
+}
+.heading-underline {
+   width: 3rem;
+   height: .2rem;
+   background-color: #1b6aff;
+   margin: 1rem 0;
+}
+
+.text-custom {
+   color: #1b6aff;
+}
+
+/*============= SKILLS SECTION =============*/
+
+.about .svg-inline--fa {
+   color: #1b6aff;
+}
+.lead {
+   font-size: 1.5rem;
+}
+
+/*-- Jumbotron Class Dropped in Bootstrap 5 --*/
+.bg-light  {
+   border-top: 1px solid #ECEEEF;
+   border-bottom: 1px solid #ECEEEF;
+}
+
+/*============= EXPERIENCE SECTION =============*/
+
+
+/*============= PORTFOLIO SECTION =============*/
+
+
+/*============= CERTIFICATES SECTION =============*/
+
+
+/*============= TEAMMATES SECTION =============*/
+
+#teammates img {
+   border: .2rem solid #1b6aff;
+}
+#teammates h4 {
+   color: #1b6aff;
+}
+
+
+/*============= CONTACT SECTION =============*/
+
+.footer {
+   background-color: #565b61;
+}
+.footer a {
+   color: white;
+   text-decoration: none;
+}
+
+/*-- Socket --*/
+.socket {
+   border-top: .2rem solid #666b71;
+}
+
+/*============= MEDIA QUERIES =============*/
+
+/* Medium (md) devices (tablets, 768px and under) */
+@media (max-width: 767.98px) {
+   .parallax-home {
+      height: 100vh;
+      min-height: 500px;
+   }
+   .btn {
+      font-size: 1rem;
+      padding: .45rem 1.05rem;
+   }
+}
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
+
+/*============= UNIVERSAL PARALLAX PLUGIN CSS =============*/
+.parallax-container {
+   -webkit-align-items: center;
+   align-items: center;
+   display: -webkit-flex;
+   display: -ms-flexbox;
+   display: flex;
+   -ms-flex-align: center;
+   -webkit-flex-wrap: wrap;
+   -ms-flex-wrap: wrap;
+   flex-wrap: wrap;
+   margin: 0;
+   padding: 15px;
+   position: relative;
+   width: 100%;
+}
+.parallax-container .parallax-content {
+   margin: 0 auto;
+   width: 100%;
+}
+.parallax__container {
+   clip: rect(0, auto, auto, 0);
+   height: 100%;
+   left: 0;
+   overflow: hidden;
+   position: absolute;
+   top: 0;
+   width: 100%;
+   z-index: -100;
+}
+.parallax__container .parallax {
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: fixed;
+   top: 0;
+   -webkit-transform: translate3d(0, 0, 0);
+   transform: translate3d(0, 0, 0);
+   -webkit-transform-style: preserve-3d;
+   transform-style: preserve-3d;
+   width: 100%;
+}
