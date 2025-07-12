@@ -109,7 +109,7 @@ renderAll(); // Initial UI paint from localStorage
 
 async function fetchAIGeneratedContent(index) {  
   const todo = todo_list[index]; //we´re going to get the current todo object and with the try function we´re going to get the A.I´s response 
-  const OPENAI_API_KEY = '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'; // Replace with your API key
+  const OPENAI_API_KEY = ''; // Replace with your API key
 
   try {
     // this fetches the description
